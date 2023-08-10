@@ -20,7 +20,6 @@ const MovieReviews = () => {
       .then(data => setReviews([...data.results]))
       .catch(error => {
         setError(error);
-        console.log(error);
       });
   }, [movieId]);
 
